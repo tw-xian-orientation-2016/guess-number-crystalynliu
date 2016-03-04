@@ -4,8 +4,13 @@ public class CompareNumber {
         String[] numbers = input.split("");
         int A = 0, B = 0;
         for (int i = 0; i < numbers.length; i++) {
-            if (answer.indexOf(numbers[i]) != -1) {
-                B++;
+            int index = answer.indexOf(numbers[i]);
+            if ( index != -1) {
+                if(i == index){
+                    A++;
+                }else {
+                    B++;
+                }
             }
         }
         return A + "A" + B + "B";
