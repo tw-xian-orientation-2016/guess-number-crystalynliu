@@ -11,7 +11,7 @@ public class CompareNumberTest {
     public void setUp(){
         compare = new CompareNumber();
     }
-    
+
     @Test
     public void should_return_0A0B_when_input_different_numbers(){
         String result = compare.compareNumber("1234","5678");
