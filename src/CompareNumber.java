@@ -5,7 +5,7 @@ public class CompareNumber {
         int A = 0, B = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (answer.indexOf(numbers[i]) != -1) {
-                A++;
+                B++;
             }
         }
         return A + "A" + B + "B";
